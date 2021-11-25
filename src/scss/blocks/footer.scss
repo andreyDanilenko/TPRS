@@ -1,0 +1,17 @@
+.footer {
+    background-color: $c-font-secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    &__title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &__logo-wrapper {
+        margin-top: 17px;
+    }
+}
