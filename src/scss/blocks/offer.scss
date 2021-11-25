@@ -72,11 +72,11 @@
         }
     }
 
-    &__item &__item-text {
+    &__item &__item-body {
         display: none;
     }
 
-    &__item--opened &__item-text {
+    &__item--opened &__item-body {
         display: block;
         padding: 0 20px 20px;
     }

@@ -284,10 +284,10 @@ svg {
 .offer__item-header:hover .offer__item-icon path {
   fill: #569ddc;
 }
-.offer__item .offer__item-text {
+.offer__item .offer__item-body {
   display: none;
 }
-.offer__item--opened .offer__item-text {
+.offer__item--opened .offer__item-body {
   display: block;
   padding: 0 20px 20px;
 }
