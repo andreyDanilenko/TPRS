@@ -1,0 +1,96 @@
+.offer {
+    &__title {
+        margin-top: 28px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    &__list {
+        margin-top: 17px;
+    }
+
+    &__item-header {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 6px 14px;
+        border-bottom: 1px solid $c-border;
+
+        &::before {
+            position: absolute;
+            content: "";
+            border: 7px solid transparent;
+            border-top: 7px solid $c-font-primary;
+            top: 50%;
+            right: 20px;
+        }
+
+        &:hover::before {
+            border: 7px solid transparent;
+            border-top: 7px solid $c-font-primary-hover;
+        }
+    }
+
+    &__item--opened &__item-header {
+        &::before {
+            border: 7px solid transparent;
+            border-bottom: 7px solid $c-font-primary;
+            transform: translate(0, -50%);
+        }
+
+        &:hover::before {
+            border: 7px solid transparent;
+            border-bottom: 7px solid $c-font-primary-hover;
+        }
+    }
+
+    &__item-icon {
+        display: block;
+    }
+
+    &__item-title {
+        display: block;
+        color: $c-font-primary;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 20px;
+        border-bottom: 1px dashed $c-font-primary;
+    }
+
+    &__item-header:hover &__item-title {
+        color: $c-font-primary-hover;
+        border-bottom: 1px dashed $c-font-primary-hover;
+    }
+
+    &__item-header:hover &__item-icon {
+        path {
+            fill: $c-font-primary-hover;
+        }
+    }
+
+    &__item &__item-text {
+        display: none;
+    }
+
+    &__item--opened &__item-text {
+        display: block;
+        padding: 0 20px 20px;
+    }
+
+    &__item-description {
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__item-important {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: $c-font-important;
+    }
+}

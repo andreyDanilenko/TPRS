@@ -1,0 +1,10 @@
+.container {
+    margin: 0 auto;
+    display: block;
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+
+    @include xl {
+        max-width: 800px + 2 * $grid-gutter;
+    }
+}

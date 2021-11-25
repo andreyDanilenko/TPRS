@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+svg {
+  fill: #000000;
+}
+
+.header {
+  position: relative;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1000;
+}
+.header__logo-wrapper {
+  padding: 7px 15px;
+}
+.header__menu {
+  max-width: 268px;
+  position: absolute;
+  display: inline-block;
+  padding: 20px 20px 390px;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  opacity: 0.95;
+}
+.header__menu {
+  display: none;
+}
+.header__wrapper--opened .header__menu {
+  display: block;
+}
+.header__burger {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: block;
+  width: 22px;
+  height: 17px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0.5px solid #ffffff;
+  outline: none;
+}
+.header__wrapper--closed .header__burger::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 3px;
+  background-color: #004685;
+  box-shadow: 0 7px 0 0 #004685, 0 14px 0 0 #004685;
+}
+.header__wrapper--closed .header__burger:hover::before {
+  transition: 0.5s;
+  background-color: #569ddc;
+  box-shadow: 0 7px 0 0 #569ddc, 0 14px 0 0 #569ddc;
+}
+.header__wrapper--opened .header__burger::before, .header__wrapper--opened .header__burger::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #004685;
+}
+.header__wrapper--opened .header__burger::before {
+  transition: 0.5s;
+  transform: rotate(-45deg);
+}
+.header__wrapper--opened .header__burger::after {
+  transition: 0.5s;
+  transform: rotate(45deg);
+}
+.header__wrapper--opened .header__burger:hover::before, .header__wrapper--opened .header__burger:hover::after {
+  background-color: #569ddc;
+}
+.header__auth-title, .header__nav-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header__auth-button {
+  margin-top: 18px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  background-color: transparent;
+  color: #004685;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header__nav {
+  margin-top: 35px;
+}
+.header__nav-link {
+  display: block;
+  margin-top: 22px;
+  text-decoration: underline;
+  color: #004685;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hero {
+  background-image: url("/img/pic_main.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 105%;
+  padding: 98px 14px 40px;
+}
+.hero__title {
+  text-align: center;
+  font-weight: 600px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.hero__search-wrapper {
+  margin-top: 19px;
+  position: relative;
+}
+.hero__search {
+  width: 100%;
+  padding: 13px 48px 13px 12px;
+  font-weight: 600px;
+  font-size: 16px;
+  line-height: 24px;
+  border: 2px solid #00468533;
+  border-radius: 4px;
+  color: #00468533;
+}
+.hero__search-button {
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 50%;
+  right: 12px;
+  transform: translate(0, -50%);
+}
+.hero__search-button:hover .hero__search-icon path {
+  fill: #569ddc;
+}
+.hero__description {
+  margin-top: 8px;
+  font-weight: 600px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.offer__title {
+  margin-top: 28px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+.offer__list {
+  margin-top: 17px;
+}
+.offer__item-header {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-bottom: 1px solid #00468533;
+}
+.offer__item-header::before {
+  position: absolute;
+  content: "";
+  border: 7px solid transparent;
+  border-top: 7px solid #004685;
+  top: 50%;
+  right: 20px;
+}
+.offer__item-header:hover::before {
+  border: 7px solid transparent;
+  border-top: 7px solid #569ddc;
+}
+.offer__item--opened .offer__item-header::before {
+  border: 7px solid transparent;
+  border-bottom: 7px solid #004685;
+  transform: translate(0, -50%);
+}
+.offer__item--opened .offer__item-header:hover::before {
+  border: 7px solid transparent;
+  border-bottom: 7px solid #569ddc;
+}
+.offer__item-icon {
+  display: block;
+}
+.offer__item-title {
+  display: block;
+  color: #004685;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 20px;
+  border-bottom: 1px dashed #004685;
+}
+.offer__item-header:hover .offer__item-title {
+  color: #569ddc;
+  border-bottom: 1px dashed #569ddc;
+}
+.offer__item-header:hover .offer__item-icon path {
+  fill: #569ddc;
+}
+.offer__item .offer__item-text {
+  display: none;
+}
+.offer__item--opened .offer__item-text {
+  display: block;
+  padding: 0 20px 20px;
+}
+.offer__item-description {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.offer__item-important {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #dc143c;
+}
+/*# sourceMappingURL=style.css.map */

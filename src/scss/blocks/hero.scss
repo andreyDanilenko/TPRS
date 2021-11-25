@@ -1,0 +1,56 @@
+.hero {
+    background-image: url("/img/pic_main.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 105%;
+    padding: 98px 14px 40px;
+
+    &__title {
+        text-align: center;
+        font-weight: 600px;
+        font-size: 20px;
+        line-height: 27px;
+        color: $c-bg-main;
+    }
+
+    &__search-wrapper {
+        margin-top: 19px;
+        position: relative;
+    }
+
+    &__search {
+        width: 100%;
+        padding: 13px 48px 13px 12px;
+        font-weight: 600px;
+        font-size: 16px;
+        line-height: 24px;
+        border: 2px solid $c-border;
+        border-radius: 4px;
+        color: $c-font-secondary;
+    }
+
+    &__search-button {
+        cursor: pointer;
+        padding: 0;
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        top: 50%;
+        right: 12px;
+        transform: translate(0, -50%);
+    }
+
+    &__search-button:hover &__search-icon {
+        path {
+            fill: $c-font-primary-hover;
+        }
+    }
+
+    &__description {
+        margin-top: 8px;
+        font-weight: 600px;
+        font-size: 12px;
+        line-height: 16px;
+        color: $c-bg-main;
+    }
+}
