@@ -97,6 +97,7 @@
 
         img {
             display: block;
+            max-width: 320px;
         }
 
         @media (min-width: 800px) {
@@ -184,6 +185,11 @@
     &__item-header:hover &__item-title {
         color: $c-font-primary-hover;
         border-bottom: 1px dashed $c-font-primary-hover;
+
+        @media (min-width: 800px) {
+            color: $c-font-main;
+            border: none;
+        }
     }
 
     &__item-header:hover &__item-icon {

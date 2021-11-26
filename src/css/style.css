@@ -531,6 +531,7 @@ svg {
 }
 .offer__item-picture-wrapper img {
   display: block;
+  max-width: 320px;
 }
 @media (min-width: 800px) {
   .offer__item-picture-wrapper {
@@ -611,6 +612,12 @@ svg {
 .offer__item-header:hover .offer__item-title {
   color: #569ddc;
   border-bottom: 1px dashed #569ddc;
+}
+@media (min-width: 800px) {
+  .offer__item-header:hover .offer__item-title {
+    color: #000000;
+    border: none;
+  }
 }
 .offer__item-header:hover .offer__item-icon path {
   fill: #569ddc;
