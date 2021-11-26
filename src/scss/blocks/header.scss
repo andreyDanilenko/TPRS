@@ -24,17 +24,49 @@
         }
     }
 
+    &__help-wrapper {
+        position: relative;
+        position: absolute;
+        top: 12px;
+        right: 20px;
+    }
+
     &__lelp {
         display: none;
 
         @media (min-width: 800px) {
             display: block;
             position: absolute;
-            top: 12px;
-            right: 20px;
+            top: 0;
+            right: 0;
+
+            &:hover svg {
+                path {
+                    fill: $c-font-primary-hover;
+                }
+
+                g {
+                    stroke: $c-font-primary-hover;
+                }
+            }
         }
     }
 
+    &__help-modal {
+        display: none;
+        position: absolute;
+        background-color: $c-bg-main;
+        padding: 20px 16px 24px;
+        top: 65px;
+        right: 0;
+    }
+
+    &__help-modal-title {
+    }
+    &__help-phone {
+    }
+    &__help-email {
+    }
     &__menu {
         max-width: 268px;
         position: absolute;

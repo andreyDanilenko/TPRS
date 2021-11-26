@@ -102,6 +102,12 @@ svg {
     width: 294px;
   }
 }
+.header__help-wrapper {
+  position: relative;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
 .header__lelp {
   display: none;
 }
@@ -109,9 +115,22 @@ svg {
   .header__lelp {
     display: block;
     position: absolute;
-    top: 12px;
-    right: 20px;
+    top: 0;
+    right: 0;
   }
+  .header__lelp:hover svg path {
+    fill: #569ddc;
+  }
+  .header__lelp:hover svg g {
+    stroke: #569ddc;
+  }
+}
+.header__help-modal {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 20px 16px 24px;
+  top: 65px;
+  right: 0;
 }
 .header__menu {
   max-width: 268px;
