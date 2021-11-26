@@ -16,6 +16,9 @@
                 <img src="./img/logo_site-logo.svg" alt="header-logo" class="header__logo" />
             </div>
             <button class="header__burger"></button>
+            <a href="#" class="header__lelp">
+                <img src="/img/ic_help.png" alt="" class="header__help-icon">
+            </a>
             <div class="header__menu">
                 <div class="header__auth">
                     <h2 class="header__auth-title">Личный кабинет</h2>
@@ -43,28 +46,40 @@
     </header>
     <main class="main">
         <section class="hero">
-            <h2 class="hero__title">Поиск начислений</h2>
-            <div class="hero__search-wrapper">
-                <input type="text" class="hero__search" placeholder="Введите данные для поиска">
-                <button class="hero__search-button">
-                    <svg class="hero__search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <g id="ic_search" transform="translate(-6 -6)">
-                            <rect id="Rectangle_31" data-name="Rectangle 31" width="24" height="24"
-                                transform="translate(6 6)" fill="none" />
-                            <path id="Union_2" data-name="Union 2"
-                                d="M-1610.292,30.085l-3.564-3.565q-.054-.054-.1-.111a9.176,9.176,0,0,1-5.245,1.629,9.18,9.18,0,0,1-6.534-2.706,9.18,9.18,0,0,1-2.707-6.535,9.177,9.177,0,0,1,2.707-6.534,9.177,9.177,0,0,1,6.534-2.707,9.183,9.183,0,0,1,6.535,2.706,9.183,9.183,0,0,1,2.706,6.535,9.176,9.176,0,0,1-1.63,5.245q.057.048.111.1l3.564,3.565a1.68,1.68,0,0,1,0,2.376,1.675,1.675,0,0,1-1.188.492A1.675,1.675,0,0,1-1610.292,30.085Zm-13.663-16.04a6.728,6.728,0,0,0,0,9.5,6.728,6.728,0,0,0,9.5,0,6.728,6.728,0,0,0,0-9.5,6.7,6.7,0,0,0-4.753-1.966A6.7,6.7,0,0,0-1623.955,14.045Z"
-                                transform="translate(1636.444 -1.556)" fill="#004685" />
-                        </g>
-                    </svg>
-                </button>
+            <div class="hero__wrapper">
+                <h2 class="hero__title">Поиск начислений</h2>
+                <div class="hero__search-wrapper">
+                    <input type="text" class="hero__search" placeholder="Введите данные для поиска">
+                    <button class="hero__search-button">
+                        <span class="hero__search-button-text">Найти</span>
+                        <svg class="hero__search-button-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <g id="ic_search" transform="translate(-6 -6)">
+                                <rect id="Rectangle_31" data-name="Rectangle 31" width="24" height="24"
+                                    transform="translate(6 6)" fill="none" />
+                                <path id="Union_2" data-name="Union 2"
+                                    d="M-1610.292,30.085l-3.564-3.565q-.054-.054-.1-.111a9.176,9.176,0,0,1-5.245,1.629,9.18,9.18,0,0,1-6.534-2.706,9.18,9.18,0,0,1-2.707-6.535,9.177,9.177,0,0,1,2.707-6.534,9.177,9.177,0,0,1,6.534-2.707,9.183,9.183,0,0,1,6.535,2.706,9.183,9.183,0,0,1,2.706,6.535,9.176,9.176,0,0,1-1.63,5.245q.057.048.111.1l3.564,3.565a1.68,1.68,0,0,1,0,2.376,1.675,1.675,0,0,1-1.188.492A1.675,1.675,0,0,1-1610.292,30.085Zm-13.663-16.04a6.728,6.728,0,0,0,0,9.5,6.728,6.728,0,0,0,9.5,0,6.728,6.728,0,0,0,0-9.5,6.7,6.7,0,0,0-4.753-1.966A6.7,6.7,0,0,0-1623.955,14.045Z"
+                                    transform="translate(1636.444 -1.556)" fill="#004685" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hero__description">Чем больше параметров введено, тем полнее результаты поиска</div>
             </div>
-            <div class="hero__description">Чем больше параметров введено, тем полнее результаты поиска</div>
         </section>
         <section class="offer">
-            <h2 class="offer__title">Узнайте, как оплатить</h2>
+            <h2 class="offer__title offer__title--first">Узнайте, как оплатить</h2>
+            <h2 class="offer__title offer__title--second">Здесь можно оплатить</h2>
+            <ul class="offer__nav-list">
+                <li class="offer__nav-item"><a href="#" class="offer__nav-link">Штрафы ГИБДД</a></li>
+                <li class="offer__nav-item"><a href="#" class="offer__nav-link">Судебные задолженности</a></li>
+                <li class="offer__nav-item"><a href="#" class="offer__nav-link">Налоги</a></li>
+                <li class="offer__nav-item"><a href="#" class="offer__nav-link">Услуги реестра</a></li>
+                <li class="offer__nav-item"><a href="#" class="offer__nav-link offer__nav-link--more">и другие
+                        услуги</a></li>
+            </ul>
             <ul class="offer__list">
-                <li class="offer__item offer__item--opened">
+                <li class="offer__item">
                     <div class="offer__item-header">
                         <span class="offer__item-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
@@ -105,18 +120,14 @@
                         <span class="offer__item-title">Судебные задолженности</span>
                     </div>
                     <div class="offer__item-body">
-                        <p class="offer__item-description">Для поиска укажите номера водительского удостоверения
-                            и свидетельства о регистрации ТС или
-                            номер штрафа. Для поиска укажите номера водительского удостоверения и свидетельства
-                            о регистрации ТС или номер штрафа.</p>
-                        <p class="offer__item-description">Если у вас есть на руках постановление о штрафе, вы можете
-                            указать реквизиты самостоятельно.
-                        </p>
-                        <p class="offer__item-description"><span class="offer__item-important">Платить вовремя —
-                                дешевле!</span>
-                            В первые 20 дней после выдачи постановления штраф
-                            можно оплатить
-                            со скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в Личном кабинете.
+                        <p class="offer__item-description"> Для поиска начислений в ГИС ГМП укажите документы:
+                            паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства.</p>
+                        <p class="offer__item-description">Вы можете указать реквизиты платежа самостоятельно, заполнив
+                            форму.</p>
+                        <p class="offer__item-description"><span class="offer__item-important">
+                                УДОБНО!</span>
+                            Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас
+                            платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.
                         </p>
                     </div>
                 </li>
@@ -134,18 +145,12 @@
                         <span class="offer__item-title">Налоги</span>
                     </div>
                     <div class="offer__item-body">
-                        <p class="offer__item-description">Для поиска укажите номера водительского удостоверения
-                            и свидетельства о регистрации ТС или
-                            номер штрафа. Для поиска укажите номера водительского удостоверения и свидетельства
-                            о регистрации ТС или номер штрафа.</p>
-                        <p class="offer__item-description">Если у вас есть на руках постановление о штрафе, вы можете
-                            указать реквизиты самостоятельно.
-                        </p>
-                        <p class="offer__item-description"><span class="offer__item-important">Платить вовремя —
-                                дешевле!</span>
-                            В первые 20 дней после выдачи постановления штраф
-                            можно оплатить
-                            со скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в Личном кабинете.
+                        <p class="offer__item-description">Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
+                            Индекс налогового документа, если у вас на руках есть квитанция.</p>
+
+                        <p class="offer__item-description"><span class="offer__item-important">ВАЖНО!</span>
+                            Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц.
+                            Принимаются только платежи физических лиц.
                         </p>
                     </div>
                 </li>
@@ -162,18 +167,12 @@
                         <span class="offer__item-title">Услуги Росреестра</span>
                     </div>
                     <div class="offer__item-body">
-                        <p class="offer__item-description">Для поиска укажите номера водительского удостоверения
-                            и свидетельства о регистрации ТС или
-                            номер штрафа. Для поиска укажите номера водительского удостоверения и свидетельства
-                            о регистрации ТС или номер штрафа.</p>
-                        <p class="offer__item-description">Если у вас есть на руках постановление о штрафе, вы можете
-                            указать реквизиты самостоятельно.
-                        </p>
-                        <p class="offer__item-description"><span class="offer__item-important">Платить вовремя —
-                                дешевле!</span>
-                            В первые 20 дней после выдачи постановления штраф
-                            можно оплатить
-                            со скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в Личном кабинете.
+                        <p class="offer__item-description">В поисковой строке укажите Код платежа, который был отправлен
+                            вам на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+
+                        <p class="offer__item-description"><span class="offer__item-important">НЕТ КОДА?</span>
+                            Если у вас ещё нет кода платежа, перейдите на сайт rosreestr.ru и сформируйте запрос
+                            на оплату электронных услуг Росреестра.
                         </p>
                     </div>
                 </li>
@@ -217,5 +216,6 @@
         </div>
     </footer>
 </body>
+<script src="/js/scripts.js"></script>
 
 </html>
