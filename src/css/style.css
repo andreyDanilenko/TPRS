@@ -707,12 +707,37 @@ svg {
   align-items: center;
   padding: 20px 0;
 }
+@media (min-width: 800px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 32px 20px 40px;
+  }
+}
 .footer__title {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
 }
+@media (min-width: 800px) {
+  .footer__title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.footer__title-br {
+  display: block;
+}
 .footer__logo-wrapper {
   margin-top: 17px;
+}
+@media (min-width: 800px) {
+  .footer__logo-wrapper {
+    margin: 0;
+  }
+}
+.footer__logo-wrapper img {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
