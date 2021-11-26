@@ -1,17 +1,16 @@
 .offer {
-    max-width: 1000px;
-    margin: 0 auto;
-
-    @media (min-width: 800px) {
-        padding: 0 20px;
-    }
-
     &__title {
+        max-width: 1000px;
+        margin: 0 auto;
         margin-top: 28px;
         text-align: center;
         font-weight: 600;
         font-size: 20px;
         line-height: 27px;
+
+        @media (min-width: 800px) {
+            padding: 0 20px;
+        }
 
         &--second {
             display: none;
@@ -36,14 +35,13 @@
         display: none;
 
         @media (min-width: 800px) {
+            max-width: 1000px;
+            margin: 16px auto 0;
+            padding: 0 150px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            margin: 16px 150px 0;
         }
-    }
-
-    &__nav-item {
     }
 
     &__nav-link {
@@ -64,6 +62,54 @@
 
     &__list {
         margin-top: 17px;
+
+        @media (min-width: 800px) {
+            margin-top: 0;
+        }
+    }
+
+    &__item {
+        border-bottom: 1px solid $c-border-main;
+
+        @media (min-width: 800px) {
+            padding: 60px 0;
+        }
+    }
+
+    &__item-wrapper {
+        @media (min-width: 800px) {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            padding: 0 20px;
+        }
+    }
+
+    &__list &__item:nth-child(2n) &__item-wrapper {
+        @media (min-width: 800px) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__item-picture-wrapper {
+        display: none;
+
+        img {
+            display: block;
+        }
+
+        @media (min-width: 800px) {
+            display: block;
+            margin-left: 40px;
+        }
+    }
+
+    &__list &__item:nth-child(2n) &__item-picture-wrapper {
+        @media (min-width: 800px) {
+            margin-left: 0;
+            margin-right: 40px;
+        }
     }
 
     &__item-header {
@@ -72,7 +118,10 @@
         display: flex;
         align-items: center;
         padding: 6px 34px 6px 14px;
-        border-bottom: 1px solid $c-border-main;
+
+        @media (min-width: 800px) {
+            padding: 0;
+        }
 
         &::before {
             position: absolute;
@@ -81,6 +130,10 @@
             border-top: 7px solid $c-font-primary;
             top: 50%;
             right: 20px;
+
+            @media (min-width: 800px) {
+                display: none;
+            }
         }
 
         &:hover::before {
@@ -104,6 +157,10 @@
 
     &__item-icon {
         display: block;
+
+        @media (min-width: 800px) {
+            display: none;
+        }
     }
 
     &__item-title {
@@ -114,6 +171,14 @@
         line-height: 24px;
         margin-left: 20px;
         border-bottom: 1px dashed $c-font-primary;
+
+        @media (min-width: 800px) {
+            font-size: 25px;
+            line-height: 32px;
+            margin: 0;
+            color: $c-font-main;
+            border: none;
+        }
     }
 
     &__item-header:hover &__item-title {
@@ -129,6 +194,10 @@
 
     &__item &__item-body {
         display: none;
+
+        @media (min-width: 800px) {
+            display: block;
+        }
     }
 
     &__item--opened &__item-body {
@@ -141,6 +210,14 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
+
+        @media (min-width: 800px) {
+            margin-top: 12px;
+
+            &:last-child {
+                margin-top: 27px;
+            }
+        }
     }
 
     &__item-important {

@@ -1,18 +1,35 @@
 .partner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
     &__title {
         margin-top: 28px;
         text-align: center;
         font-weight: 600;
         font-size: 20px;
         line-height: 27px;
+
+        @media (min-width: 800px) {
+            margin-top: 55px;
+            font-size: 36px;
+            line-height: 49px;
+        }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         padding-bottom: 33px;
+
+        @media (min-width: 800px) {
+            margin-top: 30px;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            padding-bottom: 60px;
+        }
     }
 
     &__item {

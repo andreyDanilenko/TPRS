@@ -15,17 +15,20 @@ if (headerWrapper && headerButton) {
     });
 }
 
-if (offerItems) {
-    offerItems.forEach((offerItem) => {
-        offerItem.addEventListener('click', () => {
-            if (!offerItem.classList.contains('offer__item--opened')) {
-                offerItem.classList.add('offer__item--opened');
-            } else {
-                offerItem.classList.remove('offer__item--opened');
-            }
-        });
-    })
-}
+const mediaQuery = window.matchMedia('(max-width: 800px)')
 
+if (mediaQuery.matches) {
+    if (offerItems) {
+        offerItems.forEach((offerItem) => {
+            offerItem.addEventListener('click', () => {
+                if (!offerItem.classList.contains('offer__item--opened')) {
+                    offerItem.classList.add('offer__item--opened');
+                } else {
+                    offerItem.classList.remove('offer__item--opened');
+                }
+            });
+        })
+    }
+}
 
 
